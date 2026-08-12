@@ -104,7 +104,7 @@ VPC Flow Logs provide visibility into network traffic flowing through network in
 | Configuration | Value |
 |---|---|
 | AWS Region | `us-east-1` |
-| AWS Account ID | `200020100991` |
+| AWS Account ID | `     ` |
 | VPC ID | `vpc-0a79174cf996a9f27` |
 | EC2 Private IP | `172.31.18.122` |
 | Network Interface | `eni-08d4be2512a8aa6b6` |
