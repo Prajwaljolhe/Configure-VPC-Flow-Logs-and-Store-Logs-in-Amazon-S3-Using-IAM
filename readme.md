@@ -384,7 +384,7 @@ Capturing both accepted and rejected traffic makes it possible to:
 
 ## VPC Flow Log Screenshot
 
-![VPC Flow Log Configuration](screenshots/08-flow-log.png)
+![VPC Flow Log Configuration](screenshots/01-vpc.png)
 
 The screenshot should show:
 
@@ -481,11 +481,6 @@ The following real Flow Log record was obtained from the S3 bucket:
 2 account-id eni-08d4be2512a8aa6b6 172.31.18.122 13.217.78.180 42116 443 6 16 4894 1786505660 1786505682 ACCEPT OK
 ```
 
-## Sample Log Screenshot
-
-![Sample Flow Log](screenshots/08-flow-log.png)
-
----
 
 # 11. Sample Log Explanation
 
