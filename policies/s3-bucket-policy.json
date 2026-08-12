@@ -20,7 +20,7 @@
       "Resource": "arn:aws:s3:::vpc-flow-logs-prajwal-2026/AWSLogs/*",
       "Condition": {
         "StringEquals": {
-          "aws:SourceAccount": "200020100991"
+          "aws:SourceAccount": "          "
         }
       }
     }

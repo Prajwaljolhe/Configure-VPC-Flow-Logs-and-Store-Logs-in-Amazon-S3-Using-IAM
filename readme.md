@@ -304,7 +304,7 @@ The S3 bucket policy allows the AWS log delivery service to write VPC Flow Log o
       "Resource": "arn:aws:s3:::vpc-flow-logs-prajwal-2026/AWSLogs/*",
       "Condition": {
         "StringEquals": {
-          "aws:SourceAccount": "200020100991"
+          "aws:SourceAccount": "    "
         }
       }
     }
@@ -454,7 +454,7 @@ The log directory structure is managed by AWS and may resemble:
 
 ```text
 AWSLogs/
-└── 200020100991/
+└── account-id/
     └── vpcflowlogs/
         └── us-east-1/
             └── 2026/
@@ -478,7 +478,7 @@ The screenshot shows the generated Flow Log files.
 The following real Flow Log record was obtained from the S3 bucket:
 
 ```text
-2 200020100991 eni-08d4be2512a8aa6b6 172.31.18.122 13.217.78.180 42116 443 6 16 4894 1786505660 1786505682 ACCEPT OK
+2 account-id eni-08d4be2512a8aa6b6 172.31.18.122 13.217.78.180 42116 443 6 16 4894 1786505660 1786505682 ACCEPT OK
 ```
 
 ## Sample Log Screenshot
@@ -512,7 +512,7 @@ log-status
 
 ```text
 2
-200020100991
+account id
 eni-08d4be2512a8aa6b6
 172.31.18.122
 13.217.78.180
@@ -532,7 +532,7 @@ OK
 | Field | Value | Explanation |
 |---|---|---|
 | Version | `2` | Flow Log version |
-| Account ID | `200020100991` | AWS account ID |
+| Account ID | `        ` | AWS account ID |
 | Interface ID | `eni-08d4be2512a8aa6b6` | Network interface used by the traffic |
 | Source IP | `172.31.18.122` | Private IP of the EC2 instance |
 | Destination IP | `13.217.78.180` | Remote destination |
@@ -561,7 +561,7 @@ the S3 log also contained rejected traffic.
 ## Example
 
 ```text
-2 200020100991 eni-08d4be2512a8aa6b6 36.212.51.198 172.31.18.122 57371 8188 6 1 40 1786505624 1786505650 REJECT OK
+2 account-id eni-08d4be2512a8aa6b6 36.212.51.198 172.31.18.122 57371 8188 6 1 40 1786505624 1786505650 REJECT OK
 ```
 
 ### Important Fields
